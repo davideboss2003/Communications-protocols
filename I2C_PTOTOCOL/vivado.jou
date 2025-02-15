@@ -1,0 +1,127 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Dec 18 08:04:40 2024
+# Process ID: 13352
+# Current directory: C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/I2C_PTOTOCOL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16728 C:\Users\mures\OneDrive\Desktop\SSC\PROIECT_SSC\I2C_PTOTOCOL\I2C_PTOTOCOL.xpr
+# Log file: C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/I2C_PTOTOCOL/vivado.log
+# Journal file: C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/I2C_PTOTOCOL\vivado.jou
+# Running On        :DESKTOP-PR0OU4A
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :AMD Ryzen 7 5800H with Radeon Graphics         
+# CPU Frequency     :3194 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :33130 MB
+# Swap memory       :30064 MB
+# Total Virtual     :63195 MB
+# Available Virtual :43893 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/I2C_PTOTOCOL/I2C_PTOTOCOL.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source I2C_TB.tcl
+launch_simulation
+launch_simulation
+launch_simulation
+close_sim
+close_project
+open_project C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/ETHERNET_PROTOCOL/Ethernet/Ethernet.xpr
+update_compile_order -fileset sources_1
+open_project C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/I2C_PTOTOCOL/I2C_PTOTOCOL.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source I2C_tb.tcl
+close_sim
+launch_simulation
+source I2C_tb.tcl
+open_project C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/SPI_PROTOCOL/SPI_PROTOCOL.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top spi_master [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_simulation
+source SPI_TB.tcl
+current_project I2C_PTOTOCOL
+current_sim simulation_3
+current_project SPI_PROTOCOL
+current_sim simulation_4
+current_project Ethernet
+current_project I2C_PTOTOCOL
+current_sim simulation_3
+close_sim
+launch_simulation
+launch_simulation
+current_project SPI_PROTOCOL
+close_sim
+close_project
+launch_simulation
+source I2C_tb.tcl
+launch_simulation
+launch_simulation
+launch_simulation
+close_sim
+close_project
+open_project C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/I2C_PTOTOCOL/I2C_PTOTOCOL.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source I2C_Testbench.tcl
+close_sim
+launch_simulation
+source I2C_Testbench.tcl
+close_sim
+launch_simulation
+source I2C_Testbench.tcl
+close_sim
+launch_simulation
+source I2C_Testbench.tcl
+current_project Ethernet
+launch_simulation
+source EthernetTestbench.tcl
+open_project C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/SPI_PROTOCOL/SPI_PROTOCOL.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source SPI_TB.tcl
+launch_simulation
+launch_simulation
+close_sim
+close_project
+open_project C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/SPI_PROTOCOL2/SPI_PROTOCOL2.xpr
+update_compile_order -fileset sources_1
+current_project I2C_PTOTOCOL
+close_sim
+launch_simulation
+close_project
+launch_simulation
+source spi_tb.tcl
+current_project Ethernet
+current_sim simulation_10
+launch_simulation
+close_sim
+close_project
+open_project C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/ETHERNET_PROTOCOL/Ethernet/Ethernet.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+current_project SPI_PROTOCOL2
+close_sim
+close_project
+launch_simulation
+source ethernet_tb.tcl
+close_sim
+close_project
+open_project C:/Users/mures/OneDrive/Desktop/SSC/PROIECT_SSC/I2C_PTOTOCOL/I2C_PTOTOCOL.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source i2c_tb.tcl
+close_sim
