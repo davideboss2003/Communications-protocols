@@ -8,4 +8,4 @@ SPI Protocol: A high-speed, full-duplex serial communication protocol designed f
 Ethernet Protocol: A packet-based communication protocol used in local area networks (LANs). The implementation includes both transmission (EthernetTx) and reception (EthernetRx) components, capable of handling MAC addresses, data types, and payloads.
 
 Testbenches:
-For each module (I2C Master/Slave, SPI Master/Slave, EthernetTx/Rx), a comprehensive testbench was developed to validate the functionality and to simulate real-world communication, including data transmission, reception, and error handling.
+Moreover, for each module (I2C Master/Slave, SPI Master/Slave, EthernetTx/Rx), a comprehensive testbench was developed to validate the functionality and to simulate real-world communication, including data transmission, reception, and error handling.
